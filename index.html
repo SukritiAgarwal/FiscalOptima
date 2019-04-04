@@ -3,50 +3,161 @@
 <html>
 <head>
 	<title>Fiscal Optima</title>
-	<style type="text/css">
-		#header{width: 960px; min-height: 150px; margin: 0 auto;}
-		#signup{float: right;}
-		ul {list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #333333;}
-
-li { float: left;}
-	</style>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<div id="header"><!-- difference between class adn id is you can have multiple classes of same name but no multiple ids of same name -->
-	<div>
-		<a href="#"><img src="" alt="Fiscal Optima logo"></a>
-	</div>
-	<div id="signin">
-		<form action='' method='post'><!-- action will be the php file name -->
-			<input type="text" name="email" placeholder="Email">
-			<input type="password" name="password" placeholder="Password">
-			<input type="submit" value="submit">
-		</form>
-	</div>
-</div>
-<div id="body">
-	<div>
-		<img src="" alt="The image with hexagons">
-	</div>
-	<div id="signup">
-		<form><table></table> <!-- look up for some alternative for a table. Bhavnao ko samjho -->
-			First Name: <input type="text" name="fname"><br>
-			Last Name: <input type="text" name="lname"><br>
-			Gender: 
-			<ul>
-				<li><input type="radio" name="gender" value="male"> Male</li>
-				<li><input type="radio" name="gender" value="female">Female</li>
-			</ul><br>
-			Company name: <input type="text" name="cname"><br>
-			Email Addess: <input type="text" name="email"><br>
-			Phone: <input type="number" name="phone"><br>
-			Password: <input type="password" name="password"><br>
-			Confirm Password: <input type="password" name="password"><br>
-			<input type="submit" name="submit">
-		</form>
-	</div>
-</div>
-<div id="footer"></div>
+<div class="container" style = "height: 180px">
+	<div class="row">
+		<div class="col-6">
+			<a href="#"><img src="Logo.jpeg" alt="Fiscal Optima logo"  width="80%"></a>
+		</div>
+		<div class="col-6">
+            <div style = "height: 50px">
+                
+                <div class = "h-15 d-inline-block"></div>
+                <div class="row"></div>
+            </div>
 
+            <div id="row">
+				<form action='' method='post'><!-- action will be the php file name -->
+					<input type="text" name="email" placeholder="Email">
+					<input type="password" name="password" placeholder="Password">
+					<input type="submit" value="Login">
+				</form>
+			</div>
+			<div class="row">
+				<div class="col-4"></div>
+				<div class="col-6">
+					<pre><a href="#">Forgot password</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container" style="height:490px">
+	<div class="row">
+		<div class="col-6">
+			<img src="Hexagons.gif" alt="The image with hexagons" width = "75%">
+		</div>
+		<div class="col-6">
+            <div style = "height: 10px">
+
+			<form>
+				<div class="row">
+					<div class="col-3">
+					    First Name: 
+					</div>
+					<div class="col-9">
+						<input type="text" name="fname" size="30"><br>
+					</div>
+                </div>
+
+                <div class = "h-25 d-inline-block"></div>
+                <div class="row"></div>
+
+				<div class="row">
+						<div class="col-3">
+							Last Name: 
+						</div>
+						<div class="col-7">
+							<input type="text" name="lname" size="30"><br>
+						</div>
+				</div>
+                
+                <div class = "h-15 d-inline-block"></div>
+                <div class="row"></div>
+
+                <div class="row">
+					<div class="col-3">
+							Gender:
+					</div>
+					<div class="col-3">
+						<input type="radio" name="gender" value="male">Male
+					</div>
+					<div class="col-4">
+						<input type="radio" name="gender" value="female">Female
+					</div>
+                </div>
+
+                <div class = "h-15 d-inline-block"></div>
+                <div class="row"></div>
+                
+                <div class="row">
+						<div class="col-3">
+				            Company Name: 
+						</div>
+						<div class="col-6">
+                            <input type="text" name="cname" size="30"><br>
+						</div>
+				</div>
+                
+                <div class = "h-15 d-inline-block"></div>
+                <div class="row"></div>
+
+                <div class="row">
+						<div class="col-3">
+				            Email Address: 
+						</div>
+						<div class="col-6">
+                            <input type="text" name="email" size="30"><br>
+						</div>
+                </div>
+
+                <div class = "h-15 d-inline-block"></div>
+                <div class="row"></div>
+                
+                <div class="row">
+                        <div class="col-3">
+				            Phone Number: 
+						</div>
+						<div class="col-6">
+                            <input type="text" name="phone" size="30"><br>
+						</div>
+                </div>
+
+                <div class = "h-15 d-inline-block"></div>
+                <div class="row"></div>
+
+                <div class="row">
+						<div class="col-3" size="30">
+				            Password: 
+						</div>
+						<div class="col-6">
+                            <input type="password" name="password" size="30"><br>
+						</div>
+                </div>
+                
+                <div class = "h-15 d-inline-block"></div>
+                <div class="row"></div>
+
+                <div class="row">
+						<div class="col-3">
+				            Confirm Password: 
+						</div>
+						<div class="col-7">
+                            <input type="password" name="password" size="30"><br>
+						</div>
+                </div>
+
+                <div class = "h-10 d-inline-block"></div>
+                <div class="row"></div>
+                
+				<div class="row">
+					<div class="col-3"></div>
+					<div class="col-4">
+						<input type="submit" name="submit" value="Signup">					</div>
+				<div class="col-4"></div>				
+				</div>
+            </form>
+            </div>
+		</div>
+	</div>
+</div>
+
+<div class="footer-copyright text-center py-3">Copyright© 2019
+	<a href="#"> FiscalOptima.</a> All rights reserved
+</div>
+</div>
 </body>
 </html>
